@@ -285,8 +285,8 @@ nav li a {
   text-align: center;
   margin-bottom: 100px;
 }
-.flight-card>img{
-width: 400px;
+.flight-card > img {
+  width: 400px;
 }
 .flight-card {
   border-radius: 15px;
@@ -304,97 +304,100 @@ width: 400px;
   height: 0px;
   transition: 400ms;
 }
-.flight-intro p{
+.flight-intro p {
   visibility: hidden;
 }
-.flight-intro h1{
+.flight-intro h1 {
   visibility: hidden;
 }
-.flight-card:hover .flight-intro{
+.flight-card:hover .flight-intro {
   height: 140px;
 }
-.flight-card:hover p{
+.flight-card:hover p {
   visibility: visible;
 }
-.flight-card:hover h1{
+.flight-card:hover h1 {
   visibility: visible;
 }
-.rent-card>img{
+.rent-card > img {
   width: 400px;
-  }
-  .rent-card {
-    width: 400px;
-    height: 200px;
-    border-radius: 15px;
-    position: relative;
-    overflow: hidden;
-  }
-  .rent-intro {
-    position: absolute;
-    background-color: rgb(10, 9, 9, 0.6);
-    backdrop-filter: blur(20px);
-    color: white;
-    bottom: 1px;
-    height: 0px;
-    transition: 400ms;
-  }
-  .rent-intro p{
-    visibility: hidden;
-  }
-  .rent-intro h1{
-    visibility: hidden;
-  }
-  .rent-card:hover .rent-intro{
-    height: 140px;
-  }
-  .rent-card:hover p{
-    visibility: visible;
-  }
-  .rent-card:hover h1{
-    visibility: visible;
-  }
-  .hotel-card {
-    height: 200px;
-    width: 400px;
-    border-radius: 15px;
-    position: relative;
-    overflow: hidden;
-  }
-  .hotel-intro {
-    position: absolute;
-    background-color: rgb(1, 1, 1, 0.6);
-    backdrop-filter: blur(20px);
-    bottom: 2px;
-    height: 0px;
-    color: white;
-    transition: 400ms;
-  }
-  .hotel-intro p {
-    visibility: hidden;
-  }
-  .hotel-intro h1 {
-    visibility: hidden;
-  }
-  .hotel-card:hover .hotel-intro {
-    height: 145px;
-  }
-  .hotel-card:hover h1 {
-    visibility: visible;
-  }
-  .hotel-card:hover p {
-    visibility: visible;
-  }
-  .service-cards {
-    display: flex;
-    justify-content: space-around;
-  }
-  .flight-card {
-    margin-bottom: 15px;
-  }
-  .rent-card {
-    margin-bottom: 15px;
-  }
+}
+.rent-card {
+  width: 400px;
+  height: 200px;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+}
+.rent-intro {
+  position: absolute;
+  background-color: rgb(10, 9, 9, 0.6);
+  backdrop-filter: blur(20px);
+  color: white;
+  bottom: 1px;
+  height: 0px;
+  transition: 400ms;
+}
+.rent-intro p {
+  visibility: hidden;
+}
+.rent-intro h1 {
+  visibility: hidden;
+}
+.rent-card:hover .rent-intro {
+  height: 140px;
+}
+.rent-card:hover p {
+  visibility: visible;
+}
+.rent-card:hover h1 {
+  visibility: visible;
+}
+.hotel-card {
+  height: 200px;
+  width: 400px;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+}
+.hotel-intro {
+  position: absolute;
+  background-color: rgb(1, 1, 1, 0.6);
+  backdrop-filter: blur(20px);
+  bottom: 2px;
+  height: 0px;
+  color: white;
+  transition: 400ms;
+}
+.hotel-intro p {
+  visibility: hidden;
+}
+.hotel-intro h1 {
+  visibility: hidden;
+}
+.hotel-card:hover .hotel-intro {
+  height: 145px;
+}
+.hotel-card:hover h1 {
+  visibility: visible;
+}
+.hotel-card:hover p {
+  visibility: visible;
+}
+.service-cards {
+  display: flex;
+  justify-content: space-around;
+}
+.flight-card {
+  margin-bottom: 15px;
+}
+.rent-card {
+  margin-bottom: 15px;
+}
 /* ......................contact-section........ */
+.contact-section {
+  position: relative;
+}
 .contact-heading {
   text-align: center;
 }
@@ -406,10 +409,12 @@ width: 400px;
 .names {
   display: flex;
   justify-content: space-between;
+  /* margin-bottom: 40px; */
 }
 .id-prove {
   display: flex;
   justify-content: space-between;
+  margin-top: 40px;
 }
 .f-name {
   /* padding: 12px; */
@@ -419,10 +424,38 @@ width: 400px;
 .email {
   margin-left: 80px;
 }
-.f-name input{
+.f-name input {
   padding: 10px;
   font-size: 14px;
-  
+  border-radius: 10px;
+}
+.l-name input {
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 10px;
+}
+.email input {
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 10px;
+}
+.phone input {
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 10px;
+}
+.form-button button {
+  position: absolute;
+  left: 18%;
+  top: 70%;
+}
+.form-button button {
+  padding: 12px 73px;
+}
+.form-text {
+  position: absolute;
+  left: 6%;
+  margin-top: 40px;
 }
 /* ----------------media query---------- */
 @media screen and (max-width: 1024px) {
@@ -469,7 +502,7 @@ width: 400px;
   .hero-mid {
     transform: translateX(-130px);
   }
-  
+
   .welcome-ghani h1 {
     transform: translateY(-45px);
     font-size: 3.4rem;
@@ -527,32 +560,32 @@ width: 400px;
   } */
   .hawa-mahal-card {
     width: 290px;
-    margin-left:3px;
+    margin-left: 3px;
     margin-bottom: 15px;
   }
   .hotel-card {
     width: 290px;
-    margin-left:3px;
+    margin-left: 3px;
     margin-bottom: 15px;
   }
   .night-club-card {
     width: 290px;
-    margin-left:3px;
+    margin-left: 3px;
     /* margin-bottom: 15px; */
   }
   .train-card {
     width: 290px;
-    margin-left:3px;
+    margin-left: 3px;
     margin-bottom: 15px;
   }
   .fun-card {
     width: 290px;
-    margin-left:3px;
+    margin-left: 3px;
     margin-bottom: 15px;
   }
   .bazar-card {
     width: 290px;
-    margin-left:3px;
+    margin-left: 3px;
     margin-bottom: 15px;
   }
   .service-cards {
@@ -630,18 +663,18 @@ width: 400px;
     width: 312px;
   }
 }
-@media screen and (max-width:1230px) {
-.flight-card{
-  width: 350px;
+@media screen and (max-width: 1230px) {
+  .flight-card {
+    width: 350px;
+  }
+  .rent-card {
+    width: 350px;
+  }
+  .hotel-card {
+    width: 350px;
+  }
 }
-.rent-card {
-  width: 350px;
-}
-.hotel-card {
-  width: 350px;
-}
-}
-@media screen and (max-width:1233px) {
+@media screen and (max-width: 1233px) {
   .hawa-mahal-card {
     width: 350px;
   }
@@ -658,7 +691,7 @@ width: 400px;
     width: 350px;
   }
 }
-@media screen and (max-width:1060px) {
+@media screen and (max-width: 1060px) {
   .hawa-mahal-card {
     width: 320px;
   }
@@ -684,7 +717,7 @@ width: 400px;
     width: 320px;
   }
 }
-@media screen and (max-width:998px) {
+@media screen and (max-width: 998px) {
   .hawa-mahal-card {
     width: 300px;
   }
@@ -697,20 +730,20 @@ width: 400px;
   .fun-card {
     width: 300px;
   }
-  .bazar-card{
+  .bazar-card {
     width: 300px;
   }
-  .flight-card{
+  .flight-card {
     width: 290px;
   }
   .rent-card {
     width: 290px;
   }
-.hotel-card {
-  width: 290px;
+  .hotel-card {
+    width: 290px;
+  }
 }
-}
-@media screen and (max-width:912px) {
+@media screen and (max-width: 912px) {
   .about-cards {
     display: flex;
     flex-direction: column;
@@ -721,7 +754,7 @@ width: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
-  } 
+  }
   .service-cards {
     display: flex;
     flex-direction: column;
