@@ -93,14 +93,17 @@ nav li a {
   height: 200px;
   position: relative;
   overflow: hidden;
+  border-radius: 15px;
 }
 .intro {
   background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(20px);
   position: absolute;
   bottom: 2px;
   height: 0px;
   color: white;
   transition: 400ms;
+  /* border-radius: 20px; */
 }
 .intro p {
   visibility: hidden;
@@ -131,10 +134,12 @@ nav li a {
   overflow: hidden;
   width: 400px;
   height: 200px;
+  border-radius: 15px;
   position: relative;
 }
 .club-intro {
   background: rgb(13, 12, 12, 0.6);
+  backdrop-filter: blur(20px);
   position: absolute;
   bottom: 2px;
   height: 0px;
@@ -170,10 +175,12 @@ nav li a {
   overflow: hidden;
   height: 200px;
   position: relative;
+  border-radius: 15px;
 }
 .train-intro {
   color: white;
   background: rgb(12, 11, 11, 0.6);
+  backdrop-filter: blur(20px);
   position: absolute;
   height: 0px;
   bottom: 1px;
@@ -202,10 +209,12 @@ nav li a {
   width: 400px;
   position: relative;
   height: 200px;
+  border-radius: 15px;
   overflow: hidden;
 }
 .fun-intro {
   background-color: rgb(13, 12, 12, 0.6);
+  backdrop-filter: blur(20px);
   position: absolute;
   color: white;
   bottom: 1px;
@@ -236,10 +245,12 @@ nav li a {
   height: 200px;
   position: relative;
   overflow: hidden;
+  border-radius: 15px;
 }
 .bazar-intro {
   position: absolute;
   background-color: rgb(10, 9, 9, 0.6);
+  backdrop-filter: blur(20px);
   color: white;
   bottom: 1px;
   height: 0px;
@@ -268,15 +279,17 @@ nav li a {
 }
 /* ....................service-section.............. */
 .service-section {
-  padding-top: 50px;
+  padding-top: 80px;
 }
 .service-heading {
   text-align: center;
+  margin-bottom: 100px;
 }
 .flight-card>img{
 width: 400px;
 }
 .flight-card {
+  border-radius: 15px;
   width: 400px;
   height: 200px;
   position: relative;
@@ -285,6 +298,7 @@ width: 400px;
 .flight-intro {
   position: absolute;
   background-color: rgb(10, 9, 9, 0.6);
+  backdrop-filter: blur(20px);
   color: white;
   bottom: 1px;
   height: 0px;
@@ -311,12 +325,14 @@ width: 400px;
   .rent-card {
     width: 400px;
     height: 200px;
+    border-radius: 15px;
     position: relative;
     overflow: hidden;
   }
   .rent-intro {
     position: absolute;
     background-color: rgb(10, 9, 9, 0.6);
+    backdrop-filter: blur(20px);
     color: white;
     bottom: 1px;
     height: 0px;
@@ -340,12 +356,14 @@ width: 400px;
   .hotel-card {
     height: 200px;
     width: 400px;
+    border-radius: 15px;
     position: relative;
     overflow: hidden;
   }
   .hotel-intro {
     position: absolute;
     background-color: rgb(1, 1, 1, 0.6);
+    backdrop-filter: blur(20px);
     bottom: 2px;
     height: 0px;
     color: white;
@@ -376,7 +394,36 @@ width: 400px;
   .rent-card {
     margin-bottom: 15px;
   }
-
+/* ......................contact-section........ */
+.contact-heading {
+  text-align: center;
+}
+.contact-form-map {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+.names {
+  display: flex;
+  justify-content: space-between;
+}
+.id-prove {
+  display: flex;
+  justify-content: space-between;
+}
+.f-name {
+  /* padding: 12px; */
+  margin-right: 80px;
+  margin-left: 80px;
+}
+.email {
+  margin-left: 80px;
+}
+.f-name input{
+  padding: 10px;
+  font-size: 14px;
+  
+}
 /* ----------------media query---------- */
 @media screen and (max-width: 1024px) {
   .about-cards img {
@@ -422,9 +469,7 @@ width: 400px;
   .hero-mid {
     transform: translateX(-130px);
   }
-  /* .tickets{
-      transform: translateY(-80px);
-    } */
+  
   .welcome-ghani h1 {
     transform: translateY(-45px);
     font-size: 3.4rem;
@@ -469,7 +514,7 @@ width: 400px;
   .bazar-intro {
     width: 250px;
   } */
-  .about-cards {
+  /* .about-cards {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -479,7 +524,7 @@ width: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
+  } */
   .hawa-mahal-card {
     width: 290px;
     margin-left:3px;
@@ -583,5 +628,115 @@ width: 400px;
   }
   .rent-card {
     width: 312px;
+  }
+}
+@media screen and (max-width:1230px) {
+.flight-card{
+  width: 350px;
+}
+.rent-card {
+  width: 350px;
+}
+.hotel-card {
+  width: 350px;
+}
+}
+@media screen and (max-width:1233px) {
+  .hawa-mahal-card {
+    width: 350px;
+  }
+  .train-card {
+    width: 350px;
+  }
+  .fun-card {
+    width: 350px;
+  }
+  .bazar-card {
+    width: 350px;
+  }
+  .night-club-card {
+    width: 350px;
+  }
+}
+@media screen and (max-width:1060px) {
+  .hawa-mahal-card {
+    width: 320px;
+  }
+  .train-card {
+    width: 320px;
+  }
+  .fun-card {
+    width: 320px;
+  }
+  .night-club-card {
+    width: 320px;
+  }
+  .bazar-card {
+    width: 320px;
+  }
+  .flight-card {
+    width: 320px;
+  }
+  .rent-card {
+    width: 320px;
+  }
+  .hotel-card {
+    width: 320px;
+  }
+}
+@media screen and (max-width:998px) {
+  .hawa-mahal-card {
+    width: 300px;
+  }
+  .night-club-card {
+    width: 300px;
+  }
+  .train-card {
+    width: 300px;
+  }
+  .fun-card {
+    width: 300px;
+  }
+  .bazar-card{
+    width: 300px;
+  }
+  .flight-card{
+    width: 290px;
+  }
+  .rent-card {
+    width: 290px;
+  }
+.hotel-card {
+  width: 290px;
+}
+}
+@media screen and (max-width:912px) {
+  .about-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-cards-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } 
+  .service-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hawa-mahal-card {
+    margin-bottom: 15px;
+  }
+  .night-club-card {
+    margin-bottom: -12px;
+  }
+  .train-card {
+    margin-bottom: 15px;
+  }
+  .fun-card {
+    margin-bottom: 15px;
   }
 }
