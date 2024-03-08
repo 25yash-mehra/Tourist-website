@@ -1,0 +1,587 @@
+*,
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.hero {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(./CSR-Jal-Mahal_draft1_Preeta.png);
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  /* background-color: white; */
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  padding-top: 34px;
+  font-size: 1.3rem;
+}
+nav li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  margin: 32px;
+}
+.explore-btn {
+  padding-top: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 0.9rem;
+}
+.explore-btn > button {
+  padding: 0.8rem 1.6rem;
+  border-radius: 9px;
+  color: aliceblue;
+  border: 2px solid white;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+  background: transparent;
+  /* background-color: rgb(235, 228, 100); */
+}
+.hero-mid {
+  position: absolute;
+  top: 40%;
+  color: aliceblue;
+  left: 33%;
+}
+.welcome-ghani > h1 {
+  -webkit-text-stroke: 2px rgb(255, 255, 255);
+  -webkit-text-fill-color: transparent;
+  font-size: 4rem;
+}
+.tickets {
+  left: 20%;
+  top: 130%;
+  position: absolute;
+}
+.tickets button {
+  padding: 10px 18px;
+  border-radius: 9px;
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  letter-spacing: 2px;
+  font-size: 1rem;
+}
+/* ----------------about-section----------- */
+.about-heading h1 {
+  text-align: center;
+  font-size: 2.7rem;
+}
+.about-heading h3 {
+  text-align: center;
+  margin-top: 12px;
+  margin-bottom: 90px;
+}
+.hawa-mahal-card > img {
+  width: 400px;
+  height: 200px;
+}
+.hawa-mahal-card {
+  width: 400px;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+.intro {
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  bottom: 2px;
+  height: 0px;
+  color: white;
+  transition: 400ms;
+}
+.intro p {
+  visibility: hidden;
+}
+.intro h1 {
+  visibility: hidden;
+}
+.hawa-mahal-card:hover .intro {
+  height: 175px;
+}
+.hawa-mahal-card:hover p {
+  visibility: visible;
+}
+.hawa-mahal-card:hover h1 {
+  visibility: visible;
+}
+
+.hotel-card > img {
+  width: 400px;
+  height: 200px;
+}
+
+.night-club-card > img {
+  width: 400px;
+  height: 200px;
+}
+.night-club-card {
+  overflow: hidden;
+  width: 400px;
+  height: 200px;
+  position: relative;
+}
+.club-intro {
+  background: rgb(13, 12, 12, 0.6);
+  position: absolute;
+  bottom: 2px;
+  height: 0px;
+  color: white;
+  transition: 400ms;
+}
+.club-intro p {
+  visibility: hidden;
+}
+.club-intro h1 {
+  visibility: hidden;
+}
+.night-club-card:hover .club-intro {
+  height: 140px;
+}
+.night-club-card:hover p {
+  visibility: visible;
+}
+.night-club-card:hover h1 {
+  visibility: visible;
+}
+.about-cards {
+  display: flex;
+  justify-content: space-around;
+  /* flex-wrap: wrap; */
+}
+.train-card > img {
+  width: 400px;
+  height: 200px;
+}
+.train-card {
+  width: 400px;
+  overflow: hidden;
+  height: 200px;
+  position: relative;
+}
+.train-intro {
+  color: white;
+  background: rgb(12, 11, 11, 0.6);
+  position: absolute;
+  height: 0px;
+  bottom: 1px;
+  transition: 400ms;
+}
+.train-intro h1 {
+  visibility: hidden;
+}
+.train-intro p {
+  visibility: hidden;
+}
+.train-card:hover .train-intro {
+  height: 140px;
+}
+.train-card:hover h1 {
+  visibility: visible;
+}
+.train-card:hover p {
+  visibility: visible;
+}
+.fun-card > img {
+  width: 400px;
+  height: 200px;
+}
+.fun-card {
+  width: 400px;
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+.fun-intro {
+  background-color: rgb(13, 12, 12, 0.6);
+  position: absolute;
+  color: white;
+  bottom: 1px;
+  height: 0px;
+  transition: 400ms;
+}
+.fun-intro h1 {
+  visibility: hidden;
+}
+.fun-intro p {
+  visibility: hidden;
+}
+.fun-card:hover .fun-intro {
+  height: 140px;
+}
+.fun-card:hover h1 {
+  visibility: visible;
+}
+.fun-card:hover p {
+  visibility: visible;
+}
+.bazar-card > img {
+  width: 400px;
+  height: 200px;
+}
+.bazar-card {
+  width: 400px;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+.bazar-intro {
+  position: absolute;
+  background-color: rgb(10, 9, 9, 0.6);
+  color: white;
+  bottom: 1px;
+  height: 0px;
+  transition: 400ms;
+}
+.bazar-intro h1 {
+  visibility: hidden;
+}
+.bazar-intro p {
+  visibility: hidden;
+}
+.bazar-card:hover .bazar-intro {
+  height: 140px;
+}
+.bazar-card:hover p {
+  visibility: visible;
+}
+.bazar-card:hover h1 {
+  visibility: visible;
+}
+.about-cards-2 {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-around;
+  margin-top: 30px;
+}
+/* ....................service-section.............. */
+.service-section {
+  padding-top: 50px;
+}
+.service-heading {
+  text-align: center;
+}
+.flight-card>img{
+width: 400px;
+}
+.flight-card {
+  width: 400px;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+.flight-intro {
+  position: absolute;
+  background-color: rgb(10, 9, 9, 0.6);
+  color: white;
+  bottom: 1px;
+  height: 0px;
+  transition: 400ms;
+}
+.flight-intro p{
+  visibility: hidden;
+}
+.flight-intro h1{
+  visibility: hidden;
+}
+.flight-card:hover .flight-intro{
+  height: 140px;
+}
+.flight-card:hover p{
+  visibility: visible;
+}
+.flight-card:hover h1{
+  visibility: visible;
+}
+.rent-card>img{
+  width: 400px;
+  }
+  .rent-card {
+    width: 400px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+  }
+  .rent-intro {
+    position: absolute;
+    background-color: rgb(10, 9, 9, 0.6);
+    color: white;
+    bottom: 1px;
+    height: 0px;
+    transition: 400ms;
+  }
+  .rent-intro p{
+    visibility: hidden;
+  }
+  .rent-intro h1{
+    visibility: hidden;
+  }
+  .rent-card:hover .rent-intro{
+    height: 140px;
+  }
+  .rent-card:hover p{
+    visibility: visible;
+  }
+  .rent-card:hover h1{
+    visibility: visible;
+  }
+  .hotel-card {
+    height: 200px;
+    width: 400px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hotel-intro {
+    position: absolute;
+    background-color: rgb(1, 1, 1, 0.6);
+    bottom: 2px;
+    height: 0px;
+    color: white;
+    transition: 400ms;
+  }
+  .hotel-intro p {
+    visibility: hidden;
+  }
+  .hotel-intro h1 {
+    visibility: hidden;
+  }
+  .hotel-card:hover .hotel-intro {
+    height: 145px;
+  }
+  .hotel-card:hover h1 {
+    visibility: visible;
+  }
+  .hotel-card:hover p {
+    visibility: visible;
+  }
+  .service-cards {
+    display: flex;
+    justify-content: space-around;
+  }
+  .flight-card {
+    margin-bottom: 15px;
+  }
+  .rent-card {
+    margin-bottom: 15px;
+  }
+
+/* ----------------media query---------- */
+@media screen and (max-width: 1024px) {
+  .about-cards img {
+    width: 320px;
+  }
+  .intro {
+    width: 320px;
+  }
+  .hotel-intro {
+    width: 320px;
+  }
+  .hotel-card:hover .hotel-intro {
+    height: 152px;
+  }
+  .club-intro {
+    width: 320px;
+  }
+  .night-club-card:hover .club-intro {
+    height: 150px;
+  }
+  .about-cards-2 img {
+    width: 320px;
+  }
+  .train-intro {
+    width: 320px;
+  }
+  .fun-intro {
+    width: 320px;
+  }
+  .bazar-intro {
+    width: 320px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header > nav {
+    display: none;
+  }
+  .explore-btn {
+    display: none;
+  }
+
+  .hero-mid {
+    transform: translateX(-130px);
+  }
+  /* .tickets{
+      transform: translateY(-80px);
+    } */
+  .welcome-ghani h1 {
+    transform: translateY(-45px);
+    font-size: 3.4rem;
+  }
+  .welcome-desh {
+    transform: translateY(-30px) translateX(5px);
+    font-size: 0.9rem;
+  }
+  .tickets {
+    transform: translateY(-40px) translateX(-50px);
+  }
+  /* .about-cards img {
+    width: 250px;
+  }
+  .intro {
+    width: 250px;
+  }
+  .hotel-intro {
+    width: 250px;
+  }
+  .hotel-card:hover .hotel-intro {
+    height: 170px;
+  }
+  .club-intro {
+    width: 250px;
+  }
+  .night-club-card:hover .club-intro {
+    height: 170px;
+  }
+  .about-cards-2 img {
+    width: 250px;
+  }
+  .train-intro {
+    width: 250px;
+  }
+  .train-card:hover .train-intro {
+    height: 170px;
+  }
+  .fun-intro {
+    width: 250px;
+  }
+  .bazar-intro {
+    width: 250px;
+  } */
+  .about-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-cards-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hawa-mahal-card {
+    width: 290px;
+    margin-left:3px;
+    margin-bottom: 15px;
+  }
+  .hotel-card {
+    width: 290px;
+    margin-left:3px;
+    margin-bottom: 15px;
+  }
+  .night-club-card {
+    width: 290px;
+    margin-left:3px;
+    /* margin-bottom: 15px; */
+  }
+  .train-card {
+    width: 290px;
+    margin-left:3px;
+    margin-bottom: 15px;
+  }
+  .fun-card {
+    width: 290px;
+    margin-left:3px;
+    margin-bottom: 15px;
+  }
+  .bazar-card {
+    width: 290px;
+    margin-left:3px;
+    margin-bottom: 15px;
+  }
+  .service-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .rent-card {
+    width: 290px;
+  }
+  .flight-card {
+    width: 290px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .hero-mid {
+    transform: translateX(-100px);
+  }
+  .about-heading {
+    font-size: 14px;
+  }
+  .hawa-mahal-card {
+    width: 320px;
+  }
+  .hotel-card {
+    width: 320px;
+  }
+  .night-club-card {
+    width: 320px;
+  }
+  .train-card {
+    width: 320px;
+  }
+  .fun-card {
+    width: 320px;
+  }
+  .bazar-card {
+    width: 320px;
+  }
+  .flight-card {
+    width: 320px;
+  }
+  .rent-card {
+    width: 320px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .welcome-ghani > h1 {
+    /* transform: translateX(px); */
+    font-size: 51px;
+  }
+  .hawa-mahal-card {
+    width: 312px;
+  }
+  .hotel-card {
+    width: 312px;
+  }
+  .night-club-card {
+    width: 312px;
+  }
+  .train-card {
+    width: 312px;
+  }
+  .fun-card {
+    width: 312px;
+  }
+  .bazar-card {
+    width: 312px;
+  }
+  .flight-card {
+    width: 312px;
+  }
+  .rent-card {
+    width: 312px;
+  }
+}
