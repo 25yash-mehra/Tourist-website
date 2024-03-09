@@ -444,19 +444,64 @@ nav li a {
   font-size: 14px;
   border-radius: 10px;
 }
+.phone input::-webkit-inner-spin-button{
+  -webkit-appearance:none;
+  margin: 0px;
+}
 .form-button button {
   position: absolute;
   left: 18%;
-  top: 70%;
-}
-.form-button button {
+  top: 80%;
   padding: 12px 73px;
+  border-radius: 10px;
 }
 .form-text {
   position: absolute;
   left: 6%;
   margin-top: 40px;
 }
+.form-map {
+  margin-right: 40px;
+}
+.form-button button:hover{
+border: 2px solid rgb(6, 255, 243);
+box-shadow: 0 0 20px rgb(6, 255, 243),
+             0 0 10px rgb(6, 255, 243),
+             0 0 150px rgb(6, 255, 243);
+             background-color: rgb(25, 221, 255);
+}
+.f-name input:focus{
+  border: 2px solid rgb(6, 255, 243);
+box-shadow: 0 0 20px rgb(6, 255, 243),
+             0 0 10px rgb(6, 255, 243),
+             0 0 150px rgb(6, 255, 243);
+             /* background-color: rgb(25, 221, 255); */
+}
+.l-name input:focus{
+  border: 2px solid rgb(6, 255, 243);
+box-shadow: 0 0 20px rgb(6, 255, 243),
+             0 0 10px rgb(6, 255, 243),
+             0 0 150px rgb(6, 255, 243);
+             /* background-color: rgb(25, 221, 255); */
+}
+.email input:focus{
+  border: 2px solid rgb(6, 255, 243);
+box-shadow: 0 0 20px rgb(6, 255, 243),
+             0 0 10px rgb(6, 255, 243),
+             0 0 150px rgb(6, 255, 243);
+             /* background-color: rgb(25, 221, 255); */
+}
+.phone input:focus{
+  border: 2px solid rgb(6, 255, 243);
+box-shadow: 0 0 20px rgb(6, 255, 243),
+             0 0 10px rgb(6, 255, 243),
+             0 0 150px rgb(6, 255, 243);
+             /* background-color: rgb(25, 221, 255); */
+}
+
+
+
+
 /* ----------------media query---------- */
 @media screen and (max-width: 1024px) {
   .about-cards img {
@@ -514,50 +559,6 @@ nav li a {
   .tickets {
     transform: translateY(-40px) translateX(-50px);
   }
-  /* .about-cards img {
-    width: 250px;
-  }
-  .intro {
-    width: 250px;
-  }
-  .hotel-intro {
-    width: 250px;
-  }
-  .hotel-card:hover .hotel-intro {
-    height: 170px;
-  }
-  .club-intro {
-    width: 250px;
-  }
-  .night-club-card:hover .club-intro {
-    height: 170px;
-  }
-  .about-cards-2 img {
-    width: 250px;
-  }
-  .train-intro {
-    width: 250px;
-  }
-  .train-card:hover .train-intro {
-    height: 170px;
-  }
-  .fun-intro {
-    width: 250px;
-  }
-  .bazar-intro {
-    width: 250px;
-  } */
-  /* .about-cards {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .about-cards-2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  } */
   .hawa-mahal-card {
     width: 290px;
     margin-left: 3px;
@@ -771,5 +772,137 @@ nav li a {
   }
   .fun-card {
     margin-bottom: 15px;
+  }
+}
+/* @media screen and (max-width:1088px) {
+  .f-name {
+    margin-left: 40px;
+  }
+  .email {
+    margin-left: 40px;
+  }
+  .form-text {
+    margin-left: -20px;
+  }
+  .form-button button{
+    margin-left: -15px;
+  }
+} */
+@media screen and (max-width:1045px) {
+  .contact-form-map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+.contact-form {
+  width: 300px;
+  height: 400px;
+  /* overflow: hidden; */
+}
+.email {
+  margin-right: 10px;
+}
+.l-name {
+  margin-left: -70px;
+}
+.form-button {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+}
+.form-text{
+  margin-left: 24%;
+}
+.form-map iframe{
+  width: 600px;
+}
+.form-map {
+  margin-left: 120px;
+}
+}
+@media screen and (max-width:720px) {
+  .form-text{
+    margin-left: 14%;
+  }
+}
+@media screen and (max-width:680px) {
+  .form-map iframe{
+    width: 400px;
+  }
+}
+@media screen and (max-width:624px) {
+  .form-text{
+    margin-left: 13%;
+  }
+ .names {
+   margin: 27px;
+ }
+ .id-prove {
+   margin: 20px;
+ }
+ .form-button {
+   position: absolute;
+   left: 33%;
+   top: 50%;
+ }
+ .form-map {
+   margin-right: 17%;
+ }
+ .contact-form {
+   margin-right: 15%;
+ }
+}
+@media screen and (max-width:523px) {
+  .names {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .id-prove {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .l-name {
+    margin-top: 20px;
+    margin-left: 1px;
+  }
+  .email {
+    margin-bottom: 20px;
+    margin-left: 1px;
+  }
+
+.form-button {
+  top: 55%;
+  left: 25%;
+  position: absolute;
+}
+.form-map {
+  margin-top: 20%;
+}
+}
+@media screen and (max-width:447px) {
+  .form-map iframe{
+    margin-right: 30px;
+    width: 300px;
+  }
+  .form-text {
+    /* margin-right: 80px; */
+    margin-left: 60px;
+  }
+  .form-button {
+    left: 25%;
+  }
+}
+@media screen and (max-width:386px) {
+  .form-text {
+    margin-left: 1px;
+  }
+  .form-map iframe{
+    width: 200px;
+    margin-left: -25%;
+  }
+  .form-button {
+    left: 4%;
   }
 }
